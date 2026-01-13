@@ -1,0 +1,23 @@
+# TravelMate AI - Dependencies
+# Python 3.8+ required
+
+# AI & LLM
+google-generativeai>=0.8.3    # Google Gemini API (chat + embeddings)
+pinecone>=5.0.0               # Vector database for semantic search
+
+# Voice & Audio
+assemblyai>=0.33.0            # Real-time speech-to-text (V3 streaming)
+elevenlabs>=1.0.0             # Text-to-speech synthesis
+
+# Configuration
+python-dotenv>=1.0.0          # Load API keys from .env file
+
+# Utilities
+numpy>=1.26.0                 # Required by Pinecone/audio libs
+typing-extensions>=4.8.0      # Type hints support
+
+# System Requirement (not pip installable):
+# FFmpeg - Install separately:
+#   Windows: winget install ffmpeg
+#   macOS:   brew install ffmpeg
+#   Linux:   sudo apt-get install ffmpeg
